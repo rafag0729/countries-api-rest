@@ -10,7 +10,7 @@ export const Nav = () => {
             
 
             <select>
-                <option value="">Filter by Region</option>
+                <option value="">Filter by Region &#9661;</option>
                 <option>Region1</option>
                 <option>Region2</option>
                 <option>Region3</option>

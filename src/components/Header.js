@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
-import { Nav } from './Nav';
+
 
 export const Header = () => {
 
     const {lightMode, setLightMode} = useContext(ThemeContext)
-    /* const switchTheme = useRef(null); */
+    
     const body = document.querySelector("body");
 
     const switchTheme = () => {
@@ -14,8 +14,6 @@ export const Header = () => {
         setLightMode(!lightMode);
     }
 
-
-    
     return (
         <div className="fixed_elements container">
             <header>

@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export const CountrySmall = ({name, flag, population, region, capital}) => {
     return (
         <li>
-            <a>
+            <Link to={`/${name}`}>
                 <img alt={ name } src={flag}/>
                         
                 <div className="country_specs">
@@ -12,7 +13,7 @@ export const CountrySmall = ({name, flag, population, region, capital}) => {
                     <p><strong>Region:</strong> { region }</p>
                     <p><strong>Capital:</strong> { capital }</p>
                 </div>
-            </a>
+            </Link>
         </li>
     )
 }

@@ -1,4 +1,5 @@
 @import './../base';
+@import './../utilities';
 
 *{
     padding: 0;
@@ -6,28 +7,36 @@
     box-sizing: border-box;
 }
 
+a, a:active, a:hover, a:visited{
+    text-decoration: none;
+}
+
+
 body{
     font-family: $font-stack;
     font-size: 88%;
     margin-top: 8em;
     letter-spacing: 1px;
+    transition: all .1s linear;
 
     /* LIGHT MODE COLORS */
 
     background-color: $BackLM-lighterGray;
     color: $TextLM-darkerBlue;
 
+    a, a:active, a:hover, a:visited{
+        color: $TextLM-darkerBlue;
+    }
+
     header{
         background-color: $ElementsLM-white;
     }
 
-    nav{
-
-        div, i, input[type="search"], input::placeholder, select{
-            background-color: $ElementsLM-white;
-            color: gray;
-        }
-        
+    nav div, i, input[type="search"], input::placeholder, select, button{
+        background-color: $ElementsLM-white;
+        color: gray;
+        /* -webkit-appearance: none; */
+        @include appearance(none);
     }
 
     article {
@@ -43,17 +52,17 @@ body{
     background-color: $BackDM-darkerBlue;
     color: $TextDM-white;
 
+    a, a:active, a:hover, a:visited{
+        color: $TextDM-white;
+    }
+
     header{
         background-color: $ElementsDM-darkBlue;
     }
 
-    nav{
-
-        div, i, input[type="search"], input::placeholder, select{
-            background-color: $ElementsDM-darkBlue;
-            color: $TextDM-white;
-        }
-        
+    nav div, i, input[type="search"], input::placeholder, select, button{
+        background-color: $ElementsDM-darkBlue;
+        color: $TextDM-white;
     }
 
     article {
