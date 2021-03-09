@@ -1,0 +1,42 @@
+nav{
+    @extend %flex-setup;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+
+    > div{
+        display: inline-flex;
+        align-items: center;
+        @extend %input-form-style;
+        
+        padding: 0 2em;
+        width: 40%;
+        max-width: 450px;
+    }
+
+
+
+    input[type="search"]{
+        border: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-left: 1em;
+        width: 100%;
+        outline: none;
+    
+        border-radius: 5px;
+    }
+
+    select{
+        @extend %input-form-style;
+        
+        padding: 1em 2em;
+        outline: none;
+     
+    }
+}

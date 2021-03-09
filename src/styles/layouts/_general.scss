@@ -1,0 +1,76 @@
+@import './../base';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-stack;
+    font-size: 88%;
+    margin-top: 8em;
+    letter-spacing: 1px;
+
+    /* LIGHT MODE COLORS */
+
+    background-color: $BackLM-lighterGray;
+    color: $TextLM-darkerBlue;
+
+    header{
+        background-color: $ElementsLM-white;
+    }
+
+    nav{
+
+        div, i, input[type="search"], input::placeholder, select{
+            background-color: $ElementsLM-white;
+            color: gray;
+        }
+        
+    }
+
+    article {
+        
+        >div{
+            background-color: $ElementsLM-white;
+        }
+    }
+}
+
+/*-- DARK MODE COLORS --*/
+.dark_mode{
+    background-color: $BackDM-darkerBlue;
+    color: $TextDM-white;
+
+    header{
+        background-color: $ElementsDM-darkBlue;
+    }
+
+    nav{
+
+        div, i, input[type="search"], input::placeholder, select{
+            background-color: $ElementsDM-darkBlue;
+            color: $TextDM-white;
+        }
+        
+    }
+
+    article {
+        
+        >div{
+            background-color: $ElementsDM-darkBlue;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px){
+
+    .container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1440px;
+    }
+}

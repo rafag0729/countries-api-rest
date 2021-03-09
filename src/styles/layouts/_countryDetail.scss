@@ -1,0 +1,52 @@
+@import './../utilities';
+
+.country_detail{
+    @extend %flex-setup;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    padding-top: 2em;
+    padding-left: 2em;
+
+    .country_specs{
+
+        h2{
+            margin-left: 1em;
+            margin-bottom: 2em;
+        }
+
+        > div{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            div{
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+
+                p{
+                    margin-top: .5em;
+                    margin-bottom: .5em;
+                }
+            }
+        }
+
+        >p{
+            display: inline-block;
+            margin-top: 3em;
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+        }
+
+        >span{
+            display: inline-block;
+            padding: .7em 1.3em;
+            margin-right: 1em;
+            margin-right: 1em;
+            box-shadow: 0 0 3px 1px gray;
+        }
+
+
+    }
+}

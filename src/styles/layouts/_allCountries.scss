@@ -1,0 +1,46 @@
+article{
+    @extend %flex-setup;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    > li {
+        list-style-type: none;
+        margin: 2em;
+        width: 275px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 6px rgba(0, 0, 0, .1);
+
+        img{
+            width: 100%;
+        }
+
+        .country_specs{
+            padding: 1em;
+
+            h3{
+                text-align: center;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            
+            p{
+                margin-top: .3em;
+                margin-bottom: .3em;
+            }
+        }
+
+       
+    }
+}
+
+@media screen and (max-width: 715px){
+
+    article{
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+}

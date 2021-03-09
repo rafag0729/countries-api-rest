@@ -1,0 +1,25 @@
+header{
+    font-weight: 800;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-shadow: 1px 0 12px 6px rgba(0, 0, 0, .1);
+
+    div{
+        @extend %flex-setup;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        min-height: 4em;
+    }
+
+    .switch_theme{
+        cursor: pointer;
+    }
+}
+
+.fixed_elements{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
