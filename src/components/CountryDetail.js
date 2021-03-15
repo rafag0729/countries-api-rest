@@ -6,29 +6,20 @@ import { preparingSpecs } from './helpers/preparingSpecs';
 export const CountryDetail = () => {
 
     const {country} = useParams();
-    const [specs, setSpecs] = useState({
-        name: undefined,
-        flag: undefined,
-        nativeName: undefined,
-        population: undefined,
-        region: undefined,
-        subregion: undefined,
-        capital: undefined,
-        topLevelDomain: undefined,
-        currencies: undefined,
-        languages: undefined,
-        borders: undefined
-    });
+    const [specs, setSpecs] = useState([{
+        name: undefined, flag: undefined, nativeName:undefined, population:undefined, region:undefined, 
+        subregion: undefined, capital:undefined, topLevelDomain:undefined, 
+        currencies: undefined, languages:undefined, borders:undefined}]);
     
-    const { name, flag, nativeName, population, region, subregion, 
-        capital, topLevelDomain, currencies, languages, borders } = specs;
+    const [{ name, flag, nativeName, population, region, subregion, 
+        capital, topLevelDomain, currencies, languages, borders }] = specs;
         
     useEffect(() => {
     
         fetch(`https://restcountries.eu/rest/v2/name/${country}`)
             .then( data => data.json())
             .then( countrySpecs => {
-
+                
                 setSpecs((preparingSpecs(countrySpecs)))
             })
             .catch(e => console.log(e));
@@ -41,7 +32,7 @@ export const CountryDetail = () => {
             <Link to="/AllCountries">
                 <button> <span>&#8592;</span> Back</button>
             </Link>
-
+            
             {
                 name && 
                     <div className="country_detail">

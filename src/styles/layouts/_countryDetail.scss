@@ -12,9 +12,9 @@ button{
     padding: 2em;
 
     >div:first-child{
-        min-width: 250px;
+        min-width: 300px;
         width: 100%;
-        max-width: 500px;
+        max-width: 500px;       
     }
 
     img{
@@ -29,6 +29,7 @@ button{
 
         h2{ 
             margin-bottom: 1em;
+            text-transform: capitalize;
         }
 
         > div{
@@ -58,7 +59,7 @@ button{
 }
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
 
     
     .country_detail{
