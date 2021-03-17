@@ -12,7 +12,24 @@ header{
     }
 
     .switch_theme{
+        position: relative;
+        padding: .8em 1em;
+        border-radius: 5px;
+        transition: all .3s ease-in;
         cursor: pointer;
+
+        i{
+            background-color: transparent;
+        }
+    }
+
+    .switch_theme::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        opacity: .5;
+        animation: switch_theme 1s ease-in 1s infinite alternate;
     }
 }
 
@@ -23,3 +40,15 @@ header{
     right: 0;
 }
 
+@keyframes switch_theme{
+    
+    from{
+        left: 0;
+        right: 0;
+    }
+
+    to{
+        left: 40%;
+        right: 40%;
+    }
+}

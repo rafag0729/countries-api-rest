@@ -30,13 +30,24 @@ body{
 
     header{
         background-color: $ElementsLM-white;
+
+        .switch_theme::after{
+            background-color: $TextLM-darkerBlue;
+        }
+
+        .switch_theme:hover{
+            background-color: $ElementsDM-darkBlue;
+            color: $TextDM-white;
+
+            i{
+                color: $TextDM-white;  
+            }
+        }
     }
 
     nav div, i, input[type="search"], input::placeholder, select, button{
         background-color: $ElementsLM-white;
         color: gray;
-        /* -webkit-appearance: none; */
-        /* @include appearance(none); */
     }
 
     article {
@@ -58,6 +69,19 @@ body{
 
     header{
         background-color: $ElementsDM-darkBlue;
+
+        .switch_theme::after{
+            background-color: $ElementsLM-white;
+        }
+
+        .switch_theme:hover{
+            background-color: $ElementsLM-white;
+            color: $ElementsDM-darkBlue;
+
+            i{
+                color: $ElementsDM-darkBlue;
+            }
+        }
     }
 
     nav div, i, input[type="search"], input::placeholder, select, button{

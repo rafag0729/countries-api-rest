@@ -71,11 +71,13 @@ export const CountryDetail = () => {
                                 <div>
                                 {
                                     borders.map((country, i) => (
-                                        <span
-                                            key={ i }
-                                            > 
-                                        { country } 
-                                        </span>
+                                        <Link 
+                                            to={`/${country}`}
+                                            key={ i }>
+                                            <span> 
+                                                { country } 
+                                            </span>
+                                        </Link>
                                     ))
                                 }
                                 </div>

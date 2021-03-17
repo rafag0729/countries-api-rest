@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
+import { Link } from 'react-router-dom';
+
 
 export const Header = () => {
 
@@ -18,7 +20,9 @@ export const Header = () => {
         <div className="fixed_elements container">
             <header>
                 <div>
-                    <p>Where in the world?</p>
+                    <Link to="/">
+                        <p>Where in the world?</p>
+                    </Link>
 
                     <p
                         className="switch_theme"
@@ -26,9 +30,8 @@ export const Header = () => {
                     >
                         {
                             (lightMode) 
-                                ? <i className="far fa-moon">{/* Light mode */}</i> 
-                                : <i className="fas fa-moon">{/* Dark mode */}</i> 
-                                
+                                ? <i className="far fa-moon"></i> 
+                                : <i className="fas fa-moon"></i> 
                         } Dark mode
                     </p>
                 </div>

@@ -1,9 +1,9 @@
-export const findingCountryBySearchInput = (countriesList = [], searchValue) => {
+export const findingCountryBySearchInput = (countriesList = [], searchText) => {
 
     return countriesList.filter( country => {
         const { name } = country;
 
-        return name.includes(searchValue);
+        return name.includes(searchText);
     })
 }
 
