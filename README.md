@@ -18,5 +18,5 @@ The users are able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode
 
-This challenge was great, because it allowed me to work with 
+This challenge was great, because it allowed me to work with fetch, state, customHooks, effects, mobile and desktop design Sass and more functions for modifying and preparing info to be showed
 
