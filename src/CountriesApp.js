@@ -24,9 +24,9 @@ export const CountriesApp = () => {
                 <Header/>
 
                 <Switch>
-                    <Route path="/AllCountries" component={ AllCountries} />
+                    <Route exact path="/AllCountries" component={ AllCountries} />
 
-                    <Route path="/:country" component={ CountryDetail } />
+                    <Route exact path="/search/:country" component={ CountryDetail } />
 
                     <Route path="/" component={ AllCountries } />
                 </Switch>

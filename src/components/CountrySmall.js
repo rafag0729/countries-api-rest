@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const CountrySmall = ({name, flag, population, region, capital}) => {
     return (
         <li>
-            <Link to={`/${name}`}>
+            <Link to={`/search/${name}`}>
                 <img alt={ name } src={flag}/>
                         
                 <div className="country_specs">
