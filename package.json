@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "homepage": "https://rafag0729.github.io/countries-api-rest",
   "private": true,
+<<<<<<< HEAD
+=======
+  "homepage": "https://rafag0729.github.io/countries-api-rest/",
+>>>>>>> development
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
