@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
   } from "react-router-dom";
 import { Header } from './components/Header';
 import { AllCountries } from './components/AllCountries';
@@ -24,11 +25,13 @@ export const CountriesApp = () => {
                 <Header/>
 
                 <Switch>
-                    <Route path="/AllCountries" component={ AllCountries} />
+                    <Route exact path="/AllCountries" component={ AllCountries} />
 
-                    <Route path="/:country" component={ CountryDetail } />
+                    <Route exact path="/search/:country" component={ CountryDetail } />
 
-                    <Route path="/" component={ AllCountries } />
+                    <Route exact path="/" component={ AllCountries } />
+
+                    <Redirect to="/AllCountries"/>
                 </Switch>
 
             </Router>

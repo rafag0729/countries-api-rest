@@ -72,7 +72,7 @@ export const CountryDetail = () => {
                                 {
                                     borders.map((country, i) => (
                                         <Link 
-                                            to={`/${country}`}
+                                            to={`/search/${country}`}
                                             key={ i }>
                                             <span> 
                                                 { country } 
