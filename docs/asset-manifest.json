@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/countries-api-rest/docs/static/css/main.93a5fec0.chunk.css",
+    "main.js": "/countries-api-rest/docs/static/js/main.a5d57e5c.chunk.js",
+    "main.js.map": "/countries-api-rest/docs/static/js/main.a5d57e5c.chunk.js.map",
+    "runtime-main.js": "/countries-api-rest/docs/static/js/runtime-main.52ac5516.js",
+    "runtime-main.js.map": "/countries-api-rest/docs/static/js/runtime-main.52ac5516.js.map",
+    "static/js/2.2fb5f621.chunk.js": "/countries-api-rest/docs/static/js/2.2fb5f621.chunk.js",
+    "static/js/2.2fb5f621.chunk.js.map": "/countries-api-rest/docs/static/js/2.2fb5f621.chunk.js.map",
+    "index.html": "/countries-api-rest/docs/index.html",
+    "static/css/main.93a5fec0.chunk.css.map": "/countries-api-rest/docs/static/css/main.93a5fec0.chunk.css.map",
+    "static/js/2.2fb5f621.chunk.js.LICENSE.txt": "/countries-api-rest/docs/static/js/2.2fb5f621.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52ac5516.js",
+    "static/js/2.2fb5f621.chunk.js",
+    "static/css/main.93a5fec0.chunk.css",
+    "static/js/main.a5d57e5c.chunk.js"
+  ]
+}
